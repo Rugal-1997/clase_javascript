@@ -1,5 +1,7 @@
-html{}
+html{
+	background: silver;
+}
 
 h1{
-	color: red;
+	color: blue;
 }
