@@ -1,3 +1,4 @@
+/*
 var num1 = 10.5;
 var num2 = 5;
 
@@ -44,3 +45,13 @@ function sumas(num1,num2) {
 var res = sumas(88,55);
 
 console.log(res);
+*/
+
+function iva(num1) {
+	var iva = num1 * 19 / 100 ;
+	return iva;
+}
+
+var res = iva(550000);
+
+console.log(res);  
