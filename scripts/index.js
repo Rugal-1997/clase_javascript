@@ -45,7 +45,6 @@ function sumas(num1,num2) {
 var res = sumas(88,55);
 
 console.log(res);
-*/
 
 function iva(num1) {
 	var iva = num1 * 19 / 100 ;
@@ -55,3 +54,31 @@ function iva(num1) {
 var res = iva(550000);
 
 console.log(res);  
+
+var titulos = document.getElementsByTagName('h1');
+
+console.log(titulos);
+console.log(titulos[0]);
+
+var texto = document.getElementsByClassName('texto');
+
+console.log(texto);
+
+var sede = document.getElementById('sede');
+
+console.log(sede);
+*/
+
+function iva(prec,porc) {
+	var iva = prec * porc / 100 ;
+	return iva;
+}
+
+function calcular_iva() {
+	var prec = parseInt(document.getElementById('precio').value);
+	var porc = parseInt(document.getElementById('iva').value);
+	var res = iva(prec,porc);
+	var sal = document.getElementById('resultado');
+	var text = document.createTextNode(res);
+	sal.value = (res);
+}

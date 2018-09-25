@@ -2,14 +2,27 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/index.css">	
 	<title>Ejercicios JavaScript</title>
 </head>
 <body>
-
-	<h1>Bienvenidos JS</h1>
-
+	<div class="container">
+		<h1 class="texto">CALCULAR EL IVA</h1>
+		<!--
+		<h1>Clase JavaScript</h1>
+		<p class="texto"><b>Nicolas Gomez Morales</b></p>
+		<h2 id="sede">ANDAP</h2>
+		-->
+		<form action="#">
+		<div class="form-group"><label>Precio Producto</label>
+			<input type="number" name="precio" id="precio" class="form-control"></div>
+		<div class="form-group"><label>IVA (%)</label>
+			<input type="number" name="iva" id="iva" class="form-control" min="0" max="100"></div>
+		<input type="button" class="btn btn-success" onclick="calcular_iva()" value="Calcular">
+	</form><br>
+	<h2>El iva es: </h2> <input type="number" id="resultado" class="form-control">
+	</div>
 	<script src="scripts/index.js"></script>
-
 </body>
 </html>
